@@ -1,0 +1,245 @@
+:root {
+    /* Primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Green-Push: hsl(154, 59%, 51%);
+
+    /* Accent */
+    --Blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+    --Fuente-Principal: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: var(--Fuente-Principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.contenedor {
+    max-width: 150rem;
+    width: 90%;
+    min-height: 100vh;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.contenedor-interno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+    width: 100%;
+    min-height: 80rem;
+    height: 80rem;
+}
+
+.contenedor-formulario {
+    width: 96%;
+    height: 96%;
+    /* background-color: white; */
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 33% 66%;
+}
+
+@media (min-width: 740px) {
+    .contenedor-formulario {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+.f-titulo {
+    text-align: center;
+    /* background-color: ; */
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.f-titulo h1 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 740px) {
+
+
+    .f-titulo h1 {
+        font-size: 5rem;
+    }
+
+
+}
+
+.f-titulo p {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 740px) {
+    .f-titulo p {
+        font-size: 2rem;
+    }
+}
+
+.f-formulario {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.boton-contenedor {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 9px 9px 0px rgba(26, 26, 26, 0.521);
+    -moz-box-shadow: 0px 9px 9px 0px rgba(26, 26, 26, 0.308);
+    box-shadow: 0px 9px 9px 0px rgba(26, 26, 26, 0.507);
+}
+
+.boton-prueba {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 2.5rem;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Blue);
+    border-radius: 7px;
+    /* display: block; */
+}
+
+.boton-prueba span {
+    font-weight: 700;
+}
+
+
+.contenedor-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    border-radius: 7px;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 9px 9px 0px rgba(26, 26, 26, 0.521);
+    -moz-box-shadow: 0px 9px 9px 0px rgba(26, 26, 26, 0.308);
+    box-shadow: 0px 9px 9px 0px rgba(26, 26, 26, 0.459);
+}
+
+@media (min-width: 740px) {
+    .boton-contenedor {
+        height: 10%;
+    }
+
+    .contenedor-form {
+        height: 80%;
+    }
+}
+
+.contenedor-form p {
+    text-align: center;
+}
+
+.formulario {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.boton-trial:hover {
+    cursor: pointer;
+    background-color: var(--Green);
+}
+
+input {
+    padding: 1.2rem;
+    border: none;
+    border: 1px solid rgb(201, 201, 201);
+    width: 100%;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (min-width: 740px) {
+    input {
+        padding: 2rem;
+    }
+}
+
+.boton-trial {
+    border-color: transparent;
+    text-transform: uppercase;
+    /* font-size: 1.5rem; */
+    color: white;
+    background-color: var(--Green);
+}
+
+.contenedor-form p {
+    color: gray;
+    font-weight: 500;
+}
+
+.t-and-s {
+    font-weight: bold;
+    color: var(--Red);
+}
+
+.t-and-s:hover {
+    color: red;
+    cursor: pointer;
+}
