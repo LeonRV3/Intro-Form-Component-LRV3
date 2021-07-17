@@ -2,10 +2,11 @@
     /* Primary */
     --Red: hsl(0, 100%, 74%);
     --Green: hsl(154, 59%, 51%);
-    --Green-Push: hsl(154, 59%, 51%);
+    --Green-Push: hsl(154, 66%, 30%);
 
     /* Accent */
     --Blue: hsl(248, 32%, 49%);
+    --Blue-Push: hsl(248, 31%, 34%);
 
     /* Neutral */
     --Dark-Blue: hsl(249, 10%, 26%);
@@ -157,6 +158,10 @@ body {
     /* display: block; */
 }
 
+.boton-prueba:hover {
+    background-color: var(--Blue-Push);
+}
+
 .boton-prueba span {
     font-weight: 700;
 }
@@ -202,7 +207,7 @@ body {
 
 .boton-trial:hover {
     cursor: pointer;
-    background-color: var(--Green);
+    background-color: var(--Green-Push);
 }
 
 input {
@@ -242,4 +247,9 @@ input {
 .t-and-s:hover {
     color: red;
     cursor: pointer;
+}
+
+.formtext-error {
+    font-size: 1.5rem;
+    display: none;
 }
